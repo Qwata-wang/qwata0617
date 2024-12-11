@@ -147,23 +147,23 @@
         <p style="color: #000000; background-color: #F7ECDF; padding: 10px; font-size: 15px; border-radius: 5px; border-left: 5px solid #E4232C;">
             ※ 本系統主要為異常發生時過往處理經驗僅供參考使用，實際情況決定。
         </p>
-        <!-- 信託規劃基本資料 -->
+        <!-- Shibaura 異常處理資料查詢 -->
         <div class="section">
-            <div class="section-title">信託規劃基本資料</div>
+            <div class="section-title">輸入異常相關情報查詢</div>
             <form id="trustForm">
-                <label for="clientName">客戶姓名</label>
-                <input type="text" id="clientName" name="clientName" placeholder="輸入客戶姓名" required>
+                <label for="clientName">GUI alarm情報</label>
+                <input type="text" id="clientName" name="clientName" placeholder="異常關鍵字輸入" required>
 
                 <div class="input-group">
                     <div style="flex: 1;">
-                        <label for="trustShares"><span style="color: red;">*</span> 交付信託股票張數</label>
+                        <label for="trustShares"><span style="color: red;">*</span> GUI</label>
                         <div class="input-unit-wrapper">
-                            <input type="number" id="trustShares" name="trustShares" placeholder="輸入股票張數" required>
-                            <span class="unit">張</span>
+                            <input type="number" id="trustShares" name="trustShares" placeholder="異常裝置輸入(Main/Load Port/TRM/Unit)" required>
+                            <span class="unit"></span>
                         </div>
                     </div>
                     <div style="flex: 1;">
-                        <label for="trustYears"><span style="color: red;">*</span> 信託規劃年數 (至少３年)</label>
+                        <label for="trustYears"><span style="color: red;">*</span> 設備ID</label>
                         <div class="input-unit-wrapper">
                             <input type="number" id="trustYears" name="trustYears" placeholder="輸入信託年數" required>
                             <span class="unit">年</span>
