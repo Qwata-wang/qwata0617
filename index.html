@@ -151,14 +151,14 @@
         <div class="section">
             <div class="section-title">輸入異常相關情報查詢</div>
             <form id="trustForm">
-                <label for="clientName">GUI alarm情報</label>
+                <label for="clientName">異常關鍵字情報</label>
                 <input type="text" id="clientName" name="clientName" placeholder="異常關鍵字輸入" required>
 
                 <div class="input-group">
                     <div style="flex: 1;">
-                        <label for="trustShares"><span style="color: red;">*</span> GUI</label>
+                        <label for="trustShares"><span style="color: red;">*</span> GUI or GOT alarm情報</label>
                         <div class="input-unit-wrapper">
-                            <input type="number" id="trustShares" name="trustShares" placeholder="異常裝置輸入(Main/Load Port/TRM/Unit)" required>
+                            <input type="number" id="trustShares" name="trustShares" placeholder="異常裝置Alarm 輸入(Main/Load Port/TRM/Unit)" required>
                             <span class="unit"></span>
                         </div>
                     </div>
@@ -174,18 +174,18 @@
               <div class="input-group" style="display: flex; align-items: flex-start; gap: 10px;">
     <!-- 交付股票代號部分 -->
                 <div style="flex: 1;">
-                    <label for="stockCode"><span style="color: red;">*</span> 交付股票代號</label>
+                    <label for="stockCode"><span style="color: red;">*</span> 台積對應窗口</label>
                     <div class="input-unit-wrapper" style="display: flex; align-items: center; gap: 10px;">
-                        <input type="number" id="stockCode" name="stockCode" placeholder="輸入股票代號" required style="width: 180px;">
+                        <input type="number" id="stockCode" name="stockCode" placeholder="輸入姓名" required style="width: 180px;">
                         <button type="button" class="stock-button" onclick="window.open('https://tw.stock.yahoo.com/', '_blank')" style="flex-shrink: 0;">查詢股價</button>
                     </div>
                 </div>
                 
                 <!-- 股價部分 -->
                 <div style="flex: 1;">
-                    <label for="stockPrice" style="margin-bottom: 5px; display: block;"><span style="color: red;">*</span> 股價</label>
+                    <label for="stockPrice" style="margin-bottom: 5px; display: block;"><span style="color: red;">*</span> 發生日期</label>
                     <div class="input-unit-wrapper" style="display: flex; align-items: center;">
-                        <input type="number" id="stockPrice" name="stockPrice" placeholder="輸入股價" required>
+                        <input type="number" id="stockPrice" name="stockPrice" placeholder="輸入年月日(例:2024/01/01)" required>
                         <span class="unit" style="margin-left: 2px;">元</span>
                     </div>
                 </div>
